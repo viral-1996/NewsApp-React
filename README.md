@@ -1,7 +1,3 @@
-In the project directory, you can run:
+To run the project, you need latest version of Node installed on the machine.
 
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
+To install the dependencies, run npm install command and to run developer build, run npm start command. Command line tool will automatically redirect to the webpage.
