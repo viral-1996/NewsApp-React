@@ -1,0 +1,20 @@
+.bookmark_page{
+    padding-top:15px;
+}
+
+.bookmark_header{
+    width:95%;
+    margin: 0 auto;
+    padding-left: 1%;
+    font-size: 30px;
+}
+
+.badgeicons .badge{
+    font-size: 12px;
+}
+
+.no_articles{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}

@@ -1,0 +1,41 @@
+span{
+    color: black;
+}
+
+.mo-footer{
+    text-align: center;
+    width: 100%;
+}
+
+.social_media_icons_row * {
+    box-sizing: border-box;
+}
+
+.social_media_icons_row{
+    width: 100%;
+}
+
+.social_media_icons_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icon {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.left-align{
+    padding-left:15%;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.right-align {
+    text-align: right;
+    padding-right: 15%;
+}

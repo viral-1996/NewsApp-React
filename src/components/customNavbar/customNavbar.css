@@ -1,0 +1,65 @@
+.react-switch{
+    top: 10px;
+}
+
+.right text, span{
+    color: rgba(255,255,255,.5);
+}
+
+.navbar{
+    background-color: blue !important; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #1b2848, #4f6cb0) !important;
+}
+
+.bookmark-icon{
+    margin-top: -2px;
+}
+
+.navbar-nav a{
+    color: rgb(174, 165, 165);   
+    text-decoration: none;
+    /* padding-left: 10px; */
+}
+
+.navbar-nav a.active{
+    color:white;   
+    
+    /* padding-left: 10px; */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+    color:white;
+}
+
+.navbar-nav a:hover, .navbar-nav a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.css-2b097c-container{
+    width: 250px;
+}
+
+.right {
+    flex-direction: row;
+}
+
+.tooltip {
+    /* width: 110px; */
+    padding: 0px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+@media (max-width: 600px){
+    .react-switch{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}

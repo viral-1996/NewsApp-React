@@ -1,0 +1,44 @@
+.expanded_article{
+    width: 100%;
+    padding: 1%;
+    margin: 0 auto;
+}
+
+.date_icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 98%;
+}
+
+.date_icon p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.date_icon img, .boxTitle img{
+    margin-bottom: 10px;
+}
+
+.test{
+    box-shadow: 0 0 4px 1px grey;
+    padding: 2%;
+}
+
+.shre{
+    display: flex;
+}
+
+.bookmark{
+    margin-left: 60px;
+}
+
+.Toastify__toast-body {
+    color:black;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}

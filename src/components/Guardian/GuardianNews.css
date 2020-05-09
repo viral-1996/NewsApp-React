@@ -1,0 +1,168 @@
+.news-container{
+	width: 98%;
+	margin: 0 auto;
+}
+
+.container-fluid{
+	box-shadow: 2px 2px 5px 2px grey;
+	margin-top: 20px;
+}
+
+.row{
+	padding:10px;
+}
+
+.news-image img {
+	border: 1px solid #d9d5d5;
+	width: 100%;
+	/* border-width: 50px; */
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.news-text p {
+	margin-bottom: -18px;
+}
+
+.news{
+	padding: 5px;
+}
+
+.date{
+	float: left;
+}
+
+.badge{
+	float: right;
+}
+
+.info {
+	margin-top: 15px;
+}
+
+.sport, .sports{
+	background-color: #ECBA41;
+	color: black;
+	
+}
+
+.politics{
+	background-color: #419488;
+	color: white;
+	
+}
+
+.world{
+	background-color: #7C4EFF;
+	color: white;
+	
+}
+
+.business{
+	background-color: #4696EC;
+	color: white;
+	
+}
+
+.technology{
+	background-color: #D0DE39;
+	color:black;
+	
+}
+
+.other{
+	background-color: #6E757C;
+	color: white;
+	
+}
+
+.gd{
+	background-color: #191F42;
+	color: white;
+	margin-left: 5px;
+}
+
+.ny{
+	background-color: #DBDBDB;
+	color: black;
+	margin-left: 5px;
+}
+
+.minimizedPage {
+	text-decoration: none;
+	color: black;
+}
+
+.minimizedPage:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.loading{
+	/* padding-top: 50px; */
+	/* position: absolute; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: 0;
+}
+
+.badge {
+	font-size: 14px;
+}
+
+.flex-grid-thirds {
+	display: flex;
+	justify-content: flex-start;
+	padding-left:10px;
+	padding-right:10px;
+	box-shadow: 0 5px 7px #d7d7d7;
+	margin-top: 20px;
+	padding: 10px; 
+}
+  
+.flex-grid-thirds .col_img {
+	width: 25%;
+	margin-right:10px;
+}
+  
+.flex-grid-thirds .col_text {
+	width: 75%;
+}
+
+.col_text p{
+	  margin-bottom: 5px;
+	  font-size: 18px;
+}
+
+.col_text text{
+	/* margin-bottom: 5px; */
+	font-size: 14px;
+}
+  
+.col_img img{
+	border: 1px solid #d9d5d5;
+	width: 100%;
+	padding: 5px;
+	margin: 0 auto;
+}
+  
+@media (max-width: 600px) {
+	.flex-grid-thirds {
+	  display: flex;
+	  flex-direction: column;
+	  text-align: center;
+	}
+	.flex-grid-thirds .col_img{
+		width: 100%;
+		/* margin: 0 auto; */
+		text-align: center;
+		/* margin: 0 auto; */
+	}
+	.flex-grid-thirds .col_text{
+		width: 100%;
+		/* margin: 0 auto; */
+		text-align: left;
+		/* margin: 0 auto; */
+	}
+}
