@@ -28,26 +28,26 @@ class CustomNavbar extends React.Component {
 	}
 
 	async filterSuggestion(inputValue){
-		var url = "https://viral-1996.cognitiveservices.azure.com/bing/v7.0/suggestions?q=";
-		const response = await fetch(url+inputValue,{
-			method: 'get',
-			headers: new Headers({
-				'Ocp-Apim-Subscription-Key': '5bdb5b854c554536a01239e933ffe3dc'
-			})
-		})
-		const json = await response.json();
+		// var url = "https://viral-1996.cognitiveservices.azure.com/bing/v7.0/suggestions?q=";
+		// const response = await fetch(url+inputValue,{
+		// 	method: 'get',
+		// 	headers: new Headers({
+		// 		'Ocp-Apim-Subscription-Key': '5bdb5b854c554536a01239e933ffe3dc'
+		// 	})
+		// })
+		// const json = await response.json();
 		let options = [{
 			value: inputValue,
 			label: inputValue
 		}]
-		let suggestions = json.suggestionGroups[0].searchSuggestions;
-		suggestions.map((item, key) =>{
-			options.push({
-					value: item.displayText,
-					label: item.displayText		
-				})
-			}	
-		)
+		// let suggestions = json.suggestionGroups[0].searchSuggestions;
+		// suggestions.map((item, key) =>{
+		// 	options.push({
+		// 			value: item.displayText,
+		// 			label: item.displayText		
+		// 		})
+		// 	}	
+		// )
 		return options;
 	}
 

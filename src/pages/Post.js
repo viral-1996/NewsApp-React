@@ -25,13 +25,13 @@ class Post extends React.Component {
 		var sourceType = article_id.slice(1, 3);
 		this.setState({sourceType},console.log())
 		article_id = article_id.slice(4);
-		var url=`http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/${sourceType}/post?id=${article_id}`;
-		// if(sourceType == "gd"){
-		// 	url = `https://content.guardianapis.com/${article_id}?api-key=API_KEY&show-blocks=all`;
-		// }
-		// else{
-		// 	url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:(%22'+article_id+'%22)&api-key=API_KEY';
-		// }
+		var url="";
+		if(sourceType == "gd"){
+			url = `https://content.guardianapis.com/${article_id}?api-key=39be595c-8df5-4058-babc-a20f7c80fe6c&show-blocks=all`;
+		}
+		else{
+			url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=web_url:(%22'+article_id+'%22)&api-key=nNDwcXTQUpD8tYWGwP3vzfCSjfM0vRgi';
+		}
 		console.log("fetching", url);
 		fetch(url)
 		.then(response =>  response.json())

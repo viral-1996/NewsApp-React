@@ -50,12 +50,10 @@ class GuardianNews extends React.Component {
 		var curr = this.props.match.params.category;
 		var url = "";
 		if(prevProps.news === false){
-			// url = `https://api.nytimes.com/svc/topstories/v2/${!curr?"home":curr=="sport"?"sports":curr}.json?api-key=API_KEY`;
-			url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/ny/section/${!curr?"home":curr}`;
+			url = `https://api.nytimes.com/svc/topstories/v2/${!this.curr?"home":this.curr}.json?api-key=nNDwcXTQUpD8tYWGwP3vzfCSjfM0vRgi`;
 		}
 		else{
-			// url = `https://content.guardianapis.com/search?api-key=API_KEY&section=${!curr?"(sport|business|technology|politics)":curr}&show-blocks=all`;
-			url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/gd/section/${!curr?"home":curr}`;
+			url = `https://content.guardianapis.com/search?api-key=39be595c-8df5-4058-babc-a20f7c80fe6c&section=${!this.curr?"(sport|business|technology|politics)":this.curr}&show-blocks=all`;
 		}
 		if(this.props.news != prevProps.news){
 			this.fetchArticles(url);
@@ -66,12 +64,12 @@ class GuardianNews extends React.Component {
 		this.curr = this.props.match.params.category;
 		var url = "";
 		if(this.props.news === true){
-			// url = `https://content.guardianapis.com/search?api-key=API_KEY&section=${!this.curr?"(sport|business|technology|politics)":this.curr}&show-blocks=all`;
-			url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/gd/section/${!this.curr?"home":this.curr}`;
+			url = `https://content.guardianapis.com/search?api-key=39be595c-8df5-4058-babc-a20f7c80fe6c&section=${!this.curr?"(sport|business|technology|politics)":this.curr}&show-blocks=all`;
+			// url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/gd/section/${!this.curr?"home":this.curr}`;
 		}
 		else{
-			// url = `https://api.nytimes.com/svc/topstories/v2/${!this.curr?"home":this.curr}.json?api-key=API_KEY`;
-			url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/ny/section/${!this.curr?"home":this.curr}`;
+			url = `https://api.nytimes.com/svc/topstories/v2/${!this.curr?"home":this.curr}.json?api-key=nNDwcXTQUpD8tYWGwP3vzfCSjfM0vRgi`;
+			// url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/ny/section/${!this.curr?"home":this.curr}`;
 		}
 		if(this.props.match.params.category != prevProps.match.params.category){
 			this.fetchArticles(url);
@@ -82,12 +80,12 @@ class GuardianNews extends React.Component {
 		this.curr = this.props.match.params.category;
 		var url = "";
 		if(this.props.news === true){
-			// url = `https://content.guardianapis.com/search?api-key=API_KEY&section=${!this.curr?"(sport|business|technology|politics)":this.curr}&show-blocks=all`;
-			url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/gd/section/${!this.curr?"home":this.curr}`
+			url = `https://content.guardianapis.com/search?api-key=39be595c-8df5-4058-babc-a20f7c80fe6c&section=${!this.curr?"(sport|business|technology|politics)":this.curr}&show-blocks=all`;
+			// url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/gd/section/${!this.curr?"home":this.curr}`
 		}
 		else{
-			// url = `https://api.nytimes.com/svc/topstories/v2/${!this.curr?"home":this.curr=="sport"?"sports":this.curr}.json?api-key=API_KEY`;
-			url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/ny/section/${!this.curr?"home":this.curr=="sport"?"sports":this.curr}`
+			url = `https://api.nytimes.com/svc/topstories/v2/${!this.curr?"home":this.curr}.json?api-key=nNDwcXTQUpD8tYWGwP3vzfCSjfM0vRgi`;
+			// url = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/ny/section/${!this.curr?"home":this.curr=="sport"?"sports":this.curr}`
 			
 		}
 		this.fetchArticles(url);

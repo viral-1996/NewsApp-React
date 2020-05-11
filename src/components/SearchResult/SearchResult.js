@@ -43,11 +43,11 @@ class SearchResult extends React.Component{
 		var searchUrl = "";
 		if(prevProps.location.search != this.props.location.search){
 			var query = this.props.location.search.slice(4);
-			var searchUrl = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/${sourceType}/search?q=${query}`;
-			// if(sourceType=="gd")
-			// 	searchUrl = `https://content.guardianapis.com/search?q=${query}&api-key=API_KEY&show-blocks=all`;
-			// else
-			// 	searchUrl = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query}&api-key=API_KEY`;
+			// var searchUrl = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/${sourceType}/search?q=${query}`;
+			if(sourceType=="gd")
+				searchUrl = `https://content.guardianapis.com/search?q=${query}&api-key=39be595c-8df5-4058-babc-a20f7c80fe6c&show-blocks=all`;
+			else
+				searchUrl = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query}&api-key=nNDwcXTQUpD8tYWGwP3vzfCSjfM0vRgi`;
 			this.fetchArticles(searchUrl);
 		}
 	}
@@ -57,13 +57,12 @@ class SearchResult extends React.Component{
 		this.setState({sourceType}, console.log());
 		console.log(this.props.location.search);
 		var query = this.props.location.search.slice(4);
-		var searchUrl = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/${sourceType}/search?q=${query}`;
-		// if(sourceType=="gd"){
-		// 	searchUrl = `https://content.guardianapis.com/search?q=${query}&api-key=API_KEY&show-blocks=all`;
-		// }
-		// else{
-		// 	searchUrl = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query}&api-key=API_KEY`;
-		// }	
+		var searchUrl = "";
+		// var searchUrl = `http://newsapp-backend.us-east-1.elasticbeanstalk.com/source/${sourceType}/search?q=${query}`;
+		if(sourceType=="gd")
+				searchUrl = `https://content.guardianapis.com/search?q=${query}&api-key=39be595c-8df5-4058-babc-a20f7c80fe6c&show-blocks=all`;
+		else
+			searchUrl = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${query}&api-key=nNDwcXTQUpD8tYWGwP3vzfCSjfM0vRgi`;	
 		this.fetchArticles(searchUrl);
 		
 	}
