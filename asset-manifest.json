@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/news-app/static/css/main.8abd67a6.chunk.css",
-    "main.js": "/news-app/static/js/main.0dfa8d00.chunk.js",
-    "main.js.map": "/news-app/static/js/main.0dfa8d00.chunk.js.map",
-    "runtime-main.js": "/news-app/static/js/runtime-main.c366bf89.js",
-    "runtime-main.js.map": "/news-app/static/js/runtime-main.c366bf89.js.map",
-    "static/css/2.f39ea103.chunk.css": "/news-app/static/css/2.f39ea103.chunk.css",
-    "static/js/2.5ecf886b.chunk.js": "/news-app/static/js/2.5ecf886b.chunk.js",
-    "static/js/2.5ecf886b.chunk.js.map": "/news-app/static/js/2.5ecf886b.chunk.js.map",
-    "index.html": "/news-app/index.html",
-    "precache-manifest.68976fe608343b77622163e68cb6f5f5.js": "/news-app/precache-manifest.68976fe608343b77622163e68cb6f5f5.js",
-    "service-worker.js": "/news-app/service-worker.js",
-    "static/css/2.f39ea103.chunk.css.map": "/news-app/static/css/2.f39ea103.chunk.css.map",
-    "static/css/main.8abd67a6.chunk.css.map": "/news-app/static/css/main.8abd67a6.chunk.css.map",
-    "static/js/2.5ecf886b.chunk.js.LICENSE.txt": "/news-app/static/js/2.5ecf886b.chunk.js.LICENSE.txt"
+    "main.css": "/NewsApp-React/static/css/main.8abd67a6.chunk.css",
+    "main.js": "/NewsApp-React/static/js/main.fb33ed8a.chunk.js",
+    "main.js.map": "/NewsApp-React/static/js/main.fb33ed8a.chunk.js.map",
+    "runtime-main.js": "/NewsApp-React/static/js/runtime-main.7c543ee5.js",
+    "runtime-main.js.map": "/NewsApp-React/static/js/runtime-main.7c543ee5.js.map",
+    "static/css/2.f39ea103.chunk.css": "/NewsApp-React/static/css/2.f39ea103.chunk.css",
+    "static/js/2.c45f9e32.chunk.js": "/NewsApp-React/static/js/2.c45f9e32.chunk.js",
+    "static/js/2.c45f9e32.chunk.js.map": "/NewsApp-React/static/js/2.c45f9e32.chunk.js.map",
+    "index.html": "/NewsApp-React/index.html",
+    "precache-manifest.a5df9045a8577ed8019932a45058b68a.js": "/NewsApp-React/precache-manifest.a5df9045a8577ed8019932a45058b68a.js",
+    "service-worker.js": "/NewsApp-React/service-worker.js",
+    "static/css/2.f39ea103.chunk.css.map": "/NewsApp-React/static/css/2.f39ea103.chunk.css.map",
+    "static/css/main.8abd67a6.chunk.css.map": "/NewsApp-React/static/css/main.8abd67a6.chunk.css.map",
+    "static/js/2.c45f9e32.chunk.js.LICENSE.txt": "/NewsApp-React/static/js/2.c45f9e32.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c366bf89.js",
+    "static/js/runtime-main.7c543ee5.js",
     "static/css/2.f39ea103.chunk.css",
-    "static/js/2.5ecf886b.chunk.js",
+    "static/js/2.c45f9e32.chunk.js",
     "static/css/main.8abd67a6.chunk.css",
-    "static/js/main.0dfa8d00.chunk.js"
+    "static/js/main.fb33ed8a.chunk.js"
   ]
 }
